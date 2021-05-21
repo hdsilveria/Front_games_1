@@ -1,0 +1,51 @@
+  
+<div class="row g-4" style="padding: 5%;">  
+{{#each Notas}}
+
+  <div class="col-sm-4">
+    <div class="card" id="coments" >
+      <div class="card-body">
+        <h5 class="card-title">&#127918; {{game}}</h5><br>
+        <img id="fotoGame" class="card-img-top" src="/uploads/{{nome}}{{game}}{{nota}}.jpg"><br><br>
+        <p class="card-text">{{comentario}}</p><br>
+         <span style="padding: 10px; margin-left: 20px;" class="badge bg-info rounded-pill">{{plataforma}} </span>
+          <span onload="corNota()" id="notaGame" style="padding: 10px; margin-left: 20px;" class="badge bg-warning rounded-pill"> {{genero}} </span>
+          <span onload="corNota()" id="notaGame" style="padding: 10px; margin-left: 20px;" class="badge bg-dark rounded-pill">Nota: {{nota}} </span><br><br>
+          <p id="nomeComentario">{{nome}}</small>  
+      </div>
+    </div>
+  </div>
+
+{{/each}}
+
+</div>
+
+<div class="row g-4" id="buscaPla">
+
+{{#each newbusca}}
+
+  <div class="col-sm-4">
+    <div class="card" id="coments" >
+      <div class="card-body">
+        <h5 class="card-title">&#127918; {{game}}</h5><br>
+        <img id="fotoGame" class="card-img-top" src="/uploads/{{nome}}{{game}}{{nota}}.jpg"><br><br>
+        <p class="card-text">{{comentario}}</p><br>
+         <span style="padding: 10px; margin-left: 20px;" class="badge bg-info rounded-pill">{{plataforma}} </span>
+          <span onload="corNota()" id="notaGame" style="padding: 10px; margin-left: 20px;" class="badge bg-warning rounded-pill"> {{genero}} </span>
+          <span onload="corNota()" id="notaGame" style="padding: 10px; margin-left: 20px;" class="badge bg-dark rounded-pill">Nota: {{nota}} </span><br><br>
+          <p id="nomeComentario">{{nome}}</small>     
+      </div>
+    </div>
+  </div>
+
+{{/each}}
+
+</div> 
+
+
+{{#each newcoment}}
+<script>
+  alert("Comentario realizado com sucesso!"),
+  window.location.href = "/";
+</script>
+{{/each}}

@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+div#inser {
+    background-color: rgb(71, 70, 68);
+    color: white;
+    margin: 50px;
+}
+
+div#buscaPla{
+    padding: 5%;
+    margin-top: -135px;
+}
+
+nav#menu {
+    background-color: rgb(71, 70, 68);
+    color: white;
+}
+
+div#coments{
+    background-color: rgb(71, 70, 68);
+    color: white;
+    height: 650px;
+}
+
+p#nomeComentario {
+    font-size: 10pt;
+}
+
+div#titulo {
+    text-align: center;
+    margin-top: 75px;
+}
+
+div#inserir {
+    padding: 2%;
+}
+
+img#fotoGame {
+    width: 340px; 
+    height: 250px;
+}

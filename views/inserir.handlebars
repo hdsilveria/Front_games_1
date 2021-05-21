@@ -1,0 +1,66 @@
+<div id="inser" class="container">
+
+<form action="/postar" method="POST" enctype='multipart/form-data'>
+
+  <div class="form-group col-md-5"><br>
+            <label class="form-label"><b>Seu nome e Sobrenome: </b></label>
+            <input type="text" name="nome" class="form-control" minlength="15" maxlength="40" autocomplete="off" required>
+  </div><br>
+
+<div class="row g-9">
+
+        <div class="col-auto">
+          <label class="form-label"><b>Game: </b></label>
+          <input type="text" name="game" class="form-control" autocomplete="off" required>
+        </div>
+
+
+        <div class="col-auto">
+          <label class="form-label"><b>Plataforma:</b></label>
+          <select class="form-control" name="plataforma" required>
+            <option>Playstation</option>
+            <option>Xbox </option>
+            <option>Nintendo </option>
+            <option>PC </option>
+          </select>
+        </div>
+
+        <div class="col-auto">
+          <label class="form-label"><b>Gênero:</b></label>
+          <select class="form-control" name="genero" required>
+            <option>Ação e Aventura</option>
+            <option>RPG</option>
+            <option>Plataforma</option>
+            <option>Corrida</option>
+            <option>Esporte</option>
+            <option>Luta</option>
+            <option>Horror</option>
+          </select>
+        </div>
+
+        <div class="col-auto">
+          <label class="form-label"><b>Nota: </b></label><br>
+          <input type="number" name="nota" min="0" max="10" class="form-control" required>
+        </div>
+
+        </div>
+
+        <br>
+
+        <div class="form-group col-md-7">
+            <label class="form-label"><b>Insira o Comentario: </b></label>
+            <textarea name="comentario" class="form-control"  maxlength="250" required></textarea>
+        </div>
+        <br>
+
+        <div class="form-group col-md-7">
+            <label for="formFile" class="form-label"><b>Encaminhar Imagen:</b</label>
+            <input class="form-control" type="file" name="img_game" required>
+        </div>
+        <br>
+
+        <button type="submit" class="btn btn-outline-light">Enviar</button>
+      <br><br>
+</form>
+
+</div>
